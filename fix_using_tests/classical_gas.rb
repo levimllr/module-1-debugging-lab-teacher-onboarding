@@ -1,5 +1,5 @@
 class GasStation
-
+  attr_accessor :unleaded_price
   attr_reader :brand, :unleaded_price
 
   def initialize(brand, unleaded_price)

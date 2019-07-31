@@ -10,8 +10,11 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
+    # binding.pry
+    if turtle[:traits].is_a?(String)
+      [turtle[:traits]]
+    else
+      turtle[:traits]
     end
   end
 end
